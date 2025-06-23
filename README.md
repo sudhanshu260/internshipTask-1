@@ -59,3 +59,10 @@ CREATE TABLE Loans (
     FOREIGN KEY (member_id) REFERENCES Members(member_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
+As part of the SQL Developer Internship Task 1, I designed a complete database schema for a Library Management System using SQL. I chose the "Library" domain to model real-world library operations such as book lending and author tracking.
+
+I identified four main entities: Authors, Books, Members, and Loans. The schema was structured to avoid redundancy by applying normalization principles and establishing proper relationships between entities. Appropriate data types were selected based on the attributes of each entity.
+
+I created the tables using the CREATE TABLE statement with primary keys, foreign keys, and AUTO_INCREMENT for surrogate keys. One-to-many relationships were established, for example, one author can write many books, and one member can borrow many books.
+
+To maintain data integrity, I implemented constraints such as NOT NULL, UNIQUE, and proper foreign key references across the tables.
